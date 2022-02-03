@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Cart"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_back" />
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:background="@drawable/button_radius"
+        android:textColor="@color/white"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/queryResultRecyclerView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/back"
+            android:text="Address: "/>
+
+        <EditText
+            android:id="@+id/queryEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/textView7"
+            android:text="Indonesia"/>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_below="@+id/queryEt"
+            android:background="@drawable/button_radius"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"/>
+
+<!--    <TextView-->
+<!--            android:id="@+id/queryResult"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:singleLine="false"-->
+<!--            android:maxLines="5"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:textIsSelectable="true"-->
+<!--            android:textColorHighlight="@android:color/holo_green_light"-->
+<!--            android:textColor="@android:color/secondary_text_dark_nodisable"-->
+<!--            android:layout_below="@+id/searchBtn"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/queryResultRecyclerView"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/searchBtn"/>
+    "/>
+
+</RelativeLayout>
